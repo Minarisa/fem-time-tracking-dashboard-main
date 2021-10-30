@@ -1,6 +1,6 @@
 :root {
     /* Primary colors: */
-    -color-card: hsl(246, 80%, 60%);
+    --color-card: hsl(246, 80%, 60%);
 
     --color-work: hsl(15, 100%, 70%);
     --color-play: hsl(195, 74%, 62%);
@@ -15,14 +15,115 @@
 
     --hover-color: hsl(235, 45%, 61%);
 
-    --font-color: hsl(236, 100%, 87%);
+    --primary-font-color: rgb(220, 220, 220);
+    --secondary-font-color: hsl(236, 100%, 87%);
 
     /* Font weights: */
     --font-light: 300;
     --font-normal: 400;
     --font-medium: 500;
 
+
+    --radius: 0.8rem;
+
     font-family: Rubik, sans-serif;
     font-size: 18px;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+}
+
+#dashboard {
+    width: 75vw;
+    max-width: 1200px;
+    display: grid;
+    grid-template: repeat(2, 12rem) / repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+#main-container,
+#profile-container,
+.card-container,
+.card {
+    border-radius: var(--radius);
+}
+
+/* PROFILE CARD*/
+#main-container {
+    grid-row: 1 / 3;
+    background-color: var(--background-cards-color);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#profile-container {
+    background-color: var(--color-card);
+    flex-grow: 1.8;
+    padding: 1rem;
+}
+
+#profile-container img{
+    width: 4.3rem;
+    height: auto;
+    border: 3px solid var(--primary-font-color);
+    border-radius: 50%;
+}
+
+#stats-category {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+#stats-category ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+/* CARDS WITH STATISTICS */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+#work-container {
+    background-color: var(--color-work);
+}
+
+#play-container {
+    background-color: var(--color-play);
+}
+
+#study-container {
+    background-color: var(--color-study);
+}
+
+#exercise-container {
+    background-color: var(--color-exercise);
+}
+
+#social-container {
+    background-color: var(--color-social);
+}
+
+#self-care-container {
+    background-color: var(--color-self-care);
+}
+
+.card {
+    background-color: var(--background-cards-color);
+    height: 80%;
 }
