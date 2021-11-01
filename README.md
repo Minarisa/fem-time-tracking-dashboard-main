@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/Minarisa/fem-time-tracking-dashboard-main)
+- Live Site URL: [GitHub Page](https://minarisa.github.io/fem-time-tracking-dashboard-main/)
 
 ## My process
 
