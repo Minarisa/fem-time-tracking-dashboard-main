@@ -134,13 +134,13 @@ body {
     background-position-y: -5px;
 }
 
-#card-icon,
+.card-icon,
 .current-stat__title {
     position:relative;
     width: max-content;
 }
 
-#card-icon {
+.card-icon {
     top: 3rem;
     right: 1.5rem;
     align-self: flex-end;
@@ -154,7 +154,7 @@ body {
     font-weight: var(--font-medium);
 }
 
-#card-icon:hover {
+.card-icon:hover {
     cursor: pointer;
     filter: saturate(0);
 }
