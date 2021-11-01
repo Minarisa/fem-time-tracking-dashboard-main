@@ -241,6 +241,7 @@ footer a:hover {
 @media (max-width: 1000px) {
     body {
         justify-content: flex-start;
+        padding-top: 3rem;
     }
 
     #dashboard {
@@ -270,6 +271,7 @@ footer a:hover {
 
     #stats-category {
         flex-grow: 0;
+        padding-top: 1rem;
     }
     
     #stats-category ul {
@@ -281,7 +283,7 @@ footer a:hover {
     }
 
     .card {
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
